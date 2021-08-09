@@ -1,0 +1,441 @@
+@import url('https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+/* font-family: 'Khula', sans-serif;
+font-family: 'Poppins', sans-serif; */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --color-body: #fff;
+    --color-second: #199794;
+    --color-text: #111111;
+    --color-light: #95959595;
+    --color-italic: #b5b5b5b5;
+    --color-footer: #22222222;
+    /*  */
+    --header-height: 65px;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+button {
+    outline: none;
+    border: none;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+
+/* ================================================================= HOME CSS ================================================================= */
+
+.wrapper {
+    max-width: 100%;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    height: var(--header-height);
+    align-items: center;
+    padding: 0 15px;
+    border-bottom: .5px solid #eee;
+    transition: .4s;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: var(--color-body);
+}
+
+#header .nav__toggle {
+    padding-right: 20px;
+}
+
+#header .nav__menu {
+    margin-left: 15px;
+}
+
+#header .nav__menu .nav__link,
+.nav__social .nav__social-link {
+    display: inline-block;
+    padding: 0 15px 0 0;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: 'Khula', sans-serif;
+}
+
+#header .nav__social .nav__social-link a {
+    font-size: 20px;
+}
+
+#header .nav__social .nav__social-link {
+    padding-right: 15px;
+}
+
+#header .nav__toggle:hover,
+#header .nav__menu .nav__link a:hover,
+#header .nav__social .nav__social-link a:hover {
+    color: var(--color-second);
+}
+
+
+/* =============== MENU BAR ============================= */
+
+.menu_bar {
+    z-index: 1010;
+    height: 100%;
+    width: 40%;
+    left: -100%;
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    background-color: #232323;
+    padding: 15px 15px;
+}
+
+.menu_bar-link {
+    margin: 15px 0;
+    transition: .6s;
+}
+
+.menu_bar-link a {
+    width: 100%;
+    color: var(--color-italic);
+    padding: 10px 20px;
+}
+
+.menu_bar-link:hover {
+    background-color: #eee;
+    color: #111;
+}
+
+.nav__close i {
+    color: red;
+    font-size: 20px;
+    background-color: var(--color-second)
+}
+
+.open-bar {
+    left: 0;
+}
+
+
+/* ================= LOGO ============================= */
+
+.logo__container {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding: 60px 0;
+    margin: 60px 0 0 0;
+}
+
+
+/*======================== BANNER CSS ============================= */
+
+#banner {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#banner .banner-img {
+    width: 100%;
+    opacity: 2;
+    height: 60vh;
+}
+
+#banner .banner__content {
+    position: absolute;
+    text-align: center;
+    padding: 140px 0;
+    display: flex;
+    bottom: 10%;
+    top: 10%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#banner .banner__content .banner__type {
+    line-height: 3;
+    color: #fff;
+    width: fit-content;
+    border-top: 1px solid #fff;
+    text-align: center;
+    align-self: center;
+    text-transform: uppercase;
+}
+
+#banner .banner__content .banner__heading {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: ease-in-out .5s;
+    margin: 20px 0;
+}
+
+#banner .button__banner {
+    color: #fff;
+    font-size: 13px;
+    font-style: italic;
+    font-weight: 200;
+    padding: 10px 20px;
+    width: fit-content;
+    align-self: center;
+    transition: ease-in .7s;
+    border: 1px solid #fff;
+}
+
+#banner .button__banner:hover {
+    background-color: var(--color-second);
+}
+
+
+/* ======================= BLOG CSSS ======================= */
+
+.blog {
+    margin: 64px 0;
+    padding: 0 30px;
+}
+
+.blog__card {
+    padding: 15px 18px;
+    margin-bottom: 20px;
+}
+
+.blog__card-img {
+    width: 100%;
+    transition: .3s;
+}
+
+.blog__card-img:hover {
+    transform: scale(1.05);
+}
+
+.blog__card-info {
+    padding-top: 15px;
+}
+
+.blog__card-info-type {
+    text-transform: uppercase;
+    color: var(--color-second);
+    border-top: 1px solid var(--color-second);
+    width: fit-content;
+    line-height: 2;
+    margin: 10px 0;
+}
+
+.blog__card-info-name {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 3;
+}
+
+.blog__card-info-description {
+    line-height: 1.5;
+    color: var(--color-light);
+    font-size: 15px;
+    font-family: 'Khula', sans-serif;
+}
+
+.blog__card-info-auth {
+    color: var(--color-light);
+    font-size: 12px;
+    font-family: 'Khula', sans-serif;
+    padding-top: 10px;
+}
+
+.blog__card-info-auth .auth__blog {
+    line-height: 1.5;
+    color: var(--color-text);
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.button_load {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 15px 0;
+}
+
+.load_post {
+    padding: 15px 20px;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--color-italic);
+    border: 2px solid var(--color-italic);
+    transition: .5s;
+}
+
+.load_post:hover {
+    background-color: var(--color-second);
+    border-color: var(--color-second);
+    color: #fff;
+    transition: ease-in-out .5s;
+}
+
+
+/* ================== FOOTER =================*/
+
+#footer {
+    margin-top: 30px;
+    background-color: #121212;
+}
+
+.footer__container {
+    color: #fff;
+    padding: 50px 0;
+}
+
+#footer .ri-facebook-fill,
+#footer .ri-instagram-fill,
+#footer .ri-linkedin-fill,
+#footer .ri-twitter-fill {
+    color: #fff;
+}
+
+.footer__social {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.footer__social-item {
+    display: inline-block;
+    padding: 20px 18px;
+}
+
+.footer__middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.footer__description {
+    text-align: justify;
+    line-height: 2;
+    padding: 20px 10px;
+}
+
+.footer__tag {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.popular_tag {
+    padding: 20px 10px;
+    text-align: left;
+}
+
+.popular_tag-item {
+    padding: 20px 20px;
+    line-height: 2;
+}
+
+.popular_tag-item:hover,
+.footer__social-item i:hover {
+    color: #199794;
+    transition: .5s;
+}
+
+.social__title,
+.popular__title {
+    font-size: 15px;
+    font-weight: 300;
+    font-style: italic;
+    color: var(--color-light)
+}
+
+.footer__description {
+    font-size: 13px;
+    font-weight: 300;
+    color: var(--color-light)
+}
+
+.footer__middle input {
+    padding: 10px 20px;
+    width: 95%;
+    margin: 0 15px;
+}
+
+
+/*  */

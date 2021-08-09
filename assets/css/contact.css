@@ -1,0 +1,74 @@
+.banner__contact-img {
+    width: 100%;
+    padding: 0 5%;
+}
+
+.contact__form {
+    width: 70%;
+    margin: auto;
+}
+
+.contact__form .contact__heading {
+    font-weight: 600;
+    font-size: 35px;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.contact__form .contact__description {
+    color: var(--color-light);
+    font-family: 'Khula', sans-serif;
+    padding-bottom: 10px;
+}
+
+.contact__form .form__container {
+    width: 100%;
+}
+
+.form__input_c {
+    padding: 20px 20px;
+}
+
+.contact__form .form__container .input__form {
+    width: 100%;
+    padding: 10px 40px;
+    border: 1px solid var(--color-light);
+}
+
+.input__form-btn {
+    outline: none;
+    border: 1px solid var(--color-second);
+    padding: 10px 20px;
+    background-color: var(--color-second);
+    transition: .7s;
+    font-style: italic;
+    font-weight: 300;
+    color: #fff;
+}
+
+.input__form-btn:hover {
+    background-color: #fff;
+    color: var(--color-text);
+}
+
+
+/* ===============================ABOUT ME================================== */
+
+.banner__about-img {
+    width: 100%;
+}
+
+.about__social {
+    width: 100%;
+    text-align: center;
+}
+
+.about__social-item {
+    display: inline-block;
+    padding: 0 10px;
+    font-size: 18px;
+}
+
+.about__social-item a:hover {
+    color: var(--color-second);
+}
